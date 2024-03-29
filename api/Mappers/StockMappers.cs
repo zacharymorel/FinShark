@@ -7,7 +7,7 @@ namespace api.Mappers
     {
         // Extension method?
         // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
-        public static StockDto ToStockDto(this Stocks stockModel)
+        public static StockDto ToStockDto(Stocks stockModel)
         {
             return new StockDto()
             {
@@ -21,7 +21,7 @@ namespace api.Mappers
             };
         }
 
-        public static Stocks ToStockFromCreateDto(this CreateStockRequestDto stockDto)
+        public static Stocks ToStockFromCreateDto(CreateStockRequestDto stockDto)
         {
             return new Stocks()
             {
